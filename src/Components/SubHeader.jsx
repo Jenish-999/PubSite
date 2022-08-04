@@ -1,70 +1,72 @@
 import React from "react";
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 function SubHeader() {
   return (
     <>
       <MainContainer>
         <LogoContainer>
-          <img src="/images/logo.webp" alt="logo" />
+          <Link to="/">
+            <img src="/images/logo.webp" alt="logo" />
+          </Link>
         </LogoContainer>
 
         <NavContainer>
           <Li>
-            <a className="mainAnc" href="/">
+            <Link className="mainAnc" to="/about">
               about
-            </a>
+            </Link>
             <div className="sublist_ul">
               <li>
-                <a href="/">Services</a>
+                <Link to="/about/service">Services</Link>
               </li>
               <li>
-                <a href="/">Team</a>
+                <Link to="/about/team">Team</Link>
               </li>
               <li>
-                <a href="/">FAQ</a>
+                <Link to="/about/faqpage">FAQ</Link>
               </li>
             </div>
           </Li>
           <Li>
-            <a href="/">menu</a>
+            <Link to="/menu">menu</Link>
             <div className="sublist_ul">
               <li>
-                <a href="/">Darft Beer</a>
+                <Link to="/menu/draftbeer">Darft Beer</Link>
               </li>
               <li>
-                <a href="/">Snacks Beer</a>
+                <Link to="/menu/snacks">Snacks Menu</Link>
               </li>
               <li>
-                <a href="/">Light Beer</a>
+                <Link to="/menu/lightbeer">Light Beer</Link>
               </li>
               <li>
-                <a href="/">Dark Beer</a>
+                <Link to="/menu/darkbeer">Dark Beer</Link>
               </li>
             </div>
           </Li>
           <Li>
-            <a href="/">media</a>
+            <Link to="/media">media</Link>
           </Li>
           <Li>
-            <a href="/">reservation</a>
+            <Link to="/reservation">reservation</Link>
           </Li>
           <Li>
-            <a href="/">blog</a>
+            <Link to="/blog">blog</Link>
             <div className="sublist_ul">
               <li>
-                <a href="/">Post Formats</a>
+                <Link to="/blog/post">Post Formats</Link>
               </li>
               <li>
-                <a href="/">Blog Layout</a>
+                <Link to="/blog/layout">Blog Layout</Link>
               </li>
               <li>
-                <a href="/">Sidebar settings</a>
+                <Link to="/blog/sidebar">Sidebar settings</Link>
               </li>
             </div>
           </Li>
           <Li>
-            <a href="/">contacts</a>
+            <Link to="/contact">contacts</Link>
           </Li>
         </NavContainer>
       </MainContainer>
@@ -129,6 +131,7 @@ const Li = styled.li`
     position: absolute;
     top: 20px;
     left: 0px;
+    z-index: 2;
     padding: 1rem 5rem;
     background: #151515;
     list-style: none;

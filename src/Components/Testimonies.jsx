@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import ProfileBg from "./InnerImages/Profile_Bg.jpg";
 
 function Testimonies({ profile, name, site, desp }) {
   return (
