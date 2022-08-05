@@ -4,7 +4,7 @@ import About from "./Pages/AboutSection/About";
 import Home from "./Pages/Home";
 import FaqPage from "./Pages/AboutSection/FaqPage";
 import Services from "./Pages/AboutSection/Service/Services";
-import Team from "./Pages/AboutSection/Team";
+import Team from "./Pages/AboutSection/Team/Team";
 import Blogs from "./Pages/Blogs/Blogs";
 import BlogLayout from "./Pages/Blogs/BlogLayout";
 import PostFormates from "./Pages/Blogs/PostFormates";
